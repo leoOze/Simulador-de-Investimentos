@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Simulador.MainPage">
+
+    <ScrollView HeightRequest="3000">
+        <StackLayout>
+        
+        <Frame BackgroundColor="#55a688" Padding="15" CornerRadius="0">
+            <Label Text="Vamos nos proteger da inflação!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame >
+        
+        <Label Text="Afinal, o que é inflação?"  FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
+        <Label Text="   Inflação é basicamente o aumento do índice dos preços e dos serviços, que acarretam na diminuição do nosso poder de compra." FontSize="16" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="E como nos proteger da inflação?"  FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
+        <Label Text="   Existem diversas formas de nos protegermos da inflação, e conservar nosso poder de compra para que o dinheiro que temos hoje, tenha o mesmo (ou até mais) valor daqui 5 ou 10 anos." FontSize="16" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label Text="   Uma destas formas é realizar investimentos que suas taxas de juros sejam superiores a taxa de inflação. Para entender melhor sobre como é calculada a inflação, devemos entender sobre o IPCA (Índice Nacional de Preços ao Consumidor Amplo) e como ele é definido. " FontSize="16" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Label FontSize="15" Padding="30,24,30,0">
+            
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Quer saber mais sobre como se proteger da inflação? acompanhe nosso canal no YouTube! " FontSize="Medium" FontAttributes="Bold"/>
+                        <Span Text=""/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Button Text="Canal no Youtube" Margin="20" 
+                BackgroundColor="Gray"
+                Clicked="Button_Clicked"/>
+        
+    </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ApplicationIcon>appico.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
+    <AssemblyOriginatorKeyFile>by $ky Unrelenting</AssemblyOriginatorKeyFile>
+    <Authors>$ky</Authors>
+    <Copyright>$ky - todos os direitos reservados</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="appico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="SimPage.xaml.cs">
+      <DependentUpon>SimPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="SimPage.xaml">
+      <CustomToolNamespace>MSBuild:UpdateDesignTimeXaml</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Tabbed.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

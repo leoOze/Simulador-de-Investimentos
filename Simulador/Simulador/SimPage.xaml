@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Simulador.SimPage">
+
+    <ScrollView HeightRequest="3000">
+        <StackLayout>
+        
+        
+        
+        <Label Text="Teste na prática!"  FontSize="Title" Padding="30,10,15,10" FontAttributes="Bold"/>
+        <Label Text="   Com nosso simulador de investimentos você pode ver quanto você vai ganhar investindo determinado valor, e o tempo que você quer deixar este valor aplicado. Selecionamos algumas ótimas ações e relacionamos elas com a taxa de inflação e a poupança, para que você consiga saber o quanto perderia se tivesse deixado seu dinheiro na poupança!" FontSize="16" Padding="30,0,30,0" FontAttributes="Bold"/>
+        <Entry x:Name="tbInvest" Margin="10" TextColor="Black" BackgroundColor="LightGray" MaxLength="10" Placeholder="Valor a ser Investido" PlaceholderColor="Gray" ></Entry>
+            <Entry x:Name="tbTempo" Margin="10" TextColor="Black" BackgroundColor="LightGray" MaxLength="10" Placeholder="Quantos anos quer manter o investimento?" PlaceholderColor="Gray" ></Entry>
+            <Label Text=""  FontSize="Medium" Padding="30,10,15,10" FontAttributes="Bold"/>
+            <Label x:Name="txtResultado" Text="" Margin="20"  FontSize="Medium" Padding="30,10,15,10" BackgroundColor="LightGray" FontAttributes="Bold"/>
+            
+            
+            <Button Text="Simular" Margin="20" 
+                BackgroundColor="Gray"
+                Clicked="Simular"/>
+        
+    </StackLayout>
+    </ScrollView>
+    
+</ContentPage>
