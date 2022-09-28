@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Simulador": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

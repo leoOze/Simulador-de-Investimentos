@@ -11,20 +11,25 @@
     
              
 
-    <!--Pages can be added as references or inline-->
     <local:MainPage BackgroundColor="WhiteSmoke" IconImageSource="caderno.ico" Title="Início"></local:MainPage>
 
 
 
-    <local:SimPage BackgroundColor="WhiteSmoke" IconImageSource="grafico.ico" Title="Início"></local:SimPage>
+    <local:SimPage BackgroundColor="WhiteSmoke" IconImageSource="grafico.ico" Title="Simulador"></local:SimPage>
 
 
 
-    <ContentPage BackgroundColor="Gray" IconImageSource="info.ico" Title="Sobre" 
-                 
-                 
-                 
-                 />
-    
-    
+    <ContentPage BackgroundColor="WhiteSmoke" IconImageSource="info.ico" Title="Sobre">
+        <StackLayout>
+        <Label Text="Quem nós somos?"  FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
+            <Label Text="   Somos um grupo de estudantes do Ensino Médio, e criamos este projeto com o intuito de conscientizar as pessoas a respeito da importância de investir, e como eles estão perdendo dinheiro quando deixam de investir, ou investem em titulos de baixa rentabilidade." FontSize="18" Padding="30,0,30,0" FontAttributes="Bold"/>
+            <Label Text="   Falamos também sobre os tipos de investimentos, as vantagens e desvantagens de cada um deles, e explicamos sobre os diferentes perfis de investidores, qual o proposito que cada um busca e transmitimos nossos conhecimentos para o máximo de pessoas possível." FontSize="18" Padding="30,0,30,0" FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage>
+
+
+
+
+
+
 </TabbedPage>

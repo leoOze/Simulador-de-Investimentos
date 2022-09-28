@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Simulador
@@ -17,7 +12,7 @@ namespace Simulador
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            var canal = "https://www.youtube.com/channel/UCGoMSEhZSKLj7s0DDOhQkjQ";
+            var canal = "https://www.deflacione.cf";
             Device.OpenUri(new Uri(canal));
         }
     }

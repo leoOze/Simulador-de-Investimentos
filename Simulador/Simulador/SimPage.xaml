@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:graphs="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Simulador.SimPage">
 
-    <ScrollView HeightRequest="3000">
+    <ScrollView HeightRequest="6000">
         <StackLayout>
         
         
@@ -13,14 +14,22 @@
         <Entry x:Name="tbInvest" Margin="10" TextColor="Black" BackgroundColor="LightGray" MaxLength="10" Placeholder="Valor a ser Investido" PlaceholderColor="Gray" ></Entry>
             <Entry x:Name="tbTempo" Margin="10" TextColor="Black" BackgroundColor="LightGray" MaxLength="10" Placeholder="Quantos anos quer manter o investimento?" PlaceholderColor="Gray" ></Entry>
             <Label Text=""  FontSize="Medium" Padding="30,10,15,10" FontAttributes="Bold"/>
-            <Label x:Name="txtResultado" Text="" Margin="20"  FontSize="Medium" Padding="30,10,15,10" BackgroundColor="LightGray" FontAttributes="Bold"/>
-            
-            
             <Button Text="Simular" Margin="20" 
                 BackgroundColor="Gray"
                 Clicked="Simular"/>
-        
-    </StackLayout>
+            <Label x:Name="txtResultado" Text="" Margin="20"  FontSize="Medium" Padding="30,10,15,10" BackgroundColor="White" FontAttributes="Bold"/>
+
+
+
+
+            <graphs:ChartView x:Name= "Grafico1" HeightRequest="350" />
+
+            <Label Text="   Podemos analizar a partir de gráficos as taxas que são cobradas nos investimentos, no caso do Tesouro Selic, temos um IR regressivo, taxa de custódia, e até IOF para investimentos resgatados antes de 30 dias." FontSize="16" Padding="30,0,30,0" FontAttributes="Bold"/>
+
+
+            <graphs:ChartView x:Name= "Grafico2" HeightRequest="350" />
+
+        </StackLayout>
     </ScrollView>
     
 </ContentPage>
